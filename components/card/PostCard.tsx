@@ -36,7 +36,6 @@ const PostCard = ({
   isauthor,
   classname,
 }:prop) => {
-  const router = useRouter() 
   const formattedTime = `${createAt.getFullYear().toString()}年${createAt.getMonth().toString()}月${createAt.getDay().toString()}日-${createAt.getHours().toString()}點${createAt.getMinutes().toString()}分發布`
   return (  
     <div className={`bg-dark-2 text-white flex flex-col items-start w-full mb-5 lg:max-w-4xl py-5 rounded-3xl cursor-pointer ${classname}`} >

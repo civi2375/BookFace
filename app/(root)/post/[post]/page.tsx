@@ -48,7 +48,7 @@ const page = async({params}:{params:{post:string}}) => {
           return(
             <PostCard
               key={post._id} // 添加唯一的key
-              userId = {userInfo._id}
+              userId = {userInfo._id.toString()}
               authorId={post.author._id.toString()}
               authorImg=''
               authorName={post.author.username}

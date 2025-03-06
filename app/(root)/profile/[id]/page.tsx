@@ -14,7 +14,8 @@ const page = async ({params}:{params:{id:string}}) => {
     fetchUserDataByObjectId(params.id)
   ]);
   console.log("searchUser:"+searchUser);
-
+  console.log(userInfo._id.toString());
+  
   return (
     <div className='main-container text-white'>
       <div className="bg-purple-600 text-white flex flex-col w-full px-3 mb-5 lg:max-w-4xl py-5 rounded-3xl">
@@ -35,7 +36,7 @@ const page = async ({params}:{params:{id:string}}) => {
           return(
             <PostCard
               key={post._id} // 添加唯一的key
-              userId = {userInfo._id}
+              userId = {userInfo._id.toString()}
               authorId={post.author._id.toString()}
               authorImg=''
               authorName={searchUser?.username}

@@ -23,13 +23,11 @@ import {
 const Page = async ({params}:{params:{page:number}}) => {
   const pageInterval = 3
   const user = await currentUser();
-  // const userInfo = await fetchUserData(user?.id || "");
   const [userInfo, result] = await Promise.all([
     fetchUserData(user?.id || ""),
     fetchPagePost(params.page, pageInterval)
   ]);
   if (!userInfo?.onboarded) redirect('/onboarding');
-  // const result = await fetchPagePost(page,pageInterval)
   
   return (
     <div className='main-container'>
@@ -40,8 +38,8 @@ const Page = async ({params}:{params:{page:number}}) => {
         return (
           <PostCard
             key={post._id} // 添加唯一的key
-            userId={userInfo._id}
-            author
+            userId={userInfo._id.toString()}
+            authorImg=""
             authorName={post.author.name}
             authorId={post.author._id.toString()}
             postId={post._id.toString()} 
@@ -57,12 +55,12 @@ const Page = async ({params}:{params:{page:number}}) => {
       })}
       <Pagination className="text-white z-10">
         <PaginationContent>
-          {params.page>1?
+          {params.page>1&&
             <>
             <PaginationItem>
               <PaginationPrevious href={`/page/${Number(params.page)-1}`}/>
             </PaginationItem>
-            </>:<></>
+            </>
           }
           <PaginationItem>
             <PaginationLink href="#">{params.page}</PaginationLink>
@@ -70,12 +68,12 @@ const Page = async ({params}:{params:{page:number}}) => {
           <PaginationItem>
             <PaginationEllipsis />
           </PaginationItem>
-          {result.isNext?
+          {result.isNext&&
             <>
             <PaginationItem>
               <PaginationNext href={`/page/${Number(params.page)+1}`}/>
             </PaginationItem>
-            </>:<></>
+            </>
           }
         </PaginationContent>
       </Pagination>

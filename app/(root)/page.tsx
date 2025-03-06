@@ -5,22 +5,17 @@ import { fetchUserData } from "@/lib/action/user.action";
 import { currentUser } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 
-// shadcn ui-Pagination
-import {
-  Pagination,
-  PaginationContent,
-  PaginationEllipsis,
-  PaginationItem,
-  PaginationLink,
-  PaginationNext,
-} from "@/components/ui/pagination"
+import React, { useContext } from "react";
 
 
 
 const Page = async () => {
 
+  
   const user = await currentUser();
   const userInfo = await fetchUserData(user?.id || "");
+  console.log(userInfo);
+  
   if(!userInfo?.onboarded){
     console.log('使用者尚未登入或尚未設定個人資料，正在導向至onbarding');
     redirect('/onboarding')

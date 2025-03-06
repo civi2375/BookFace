@@ -19,10 +19,10 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={inter.className}>
-          <Topbar/>
-          {children}
-        </body>
+          <body className={inter.className}>
+              <Topbar/>
+              {children}
+          </body>
       </html>
     </ClerkProvider>
   );
