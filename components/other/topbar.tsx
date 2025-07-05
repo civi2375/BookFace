@@ -31,15 +31,15 @@ const Topbar = async () => {
     return (
     <div className='w-full sticky flex justify-between items-center bg-dark-2 py-3 px-3 lg:px-16'>
 
-      <a href="/" className='transition-all duration-75 hover:outline outline-slate-500 p-3 rounded-2xl cursor-pointer'>
+      <Link href="/" className='transition-all duration-75 hover:outline outline-slate-500 p-3 rounded-2xl cursor-pointer'>
         <House size={36} color='white' className=''/>
-      </a>
-      <a href="/" className='transition-all duration-75 hover:outline outline-slate-500 p-3 rounded-2xl cursor-pointer'>
+      </Link>
+      <Link href="/search" className='transition-all duration-75 hover:outline outline-slate-500 p-3 rounded-2xl cursor-pointer'>
         <Search size={36} color='white' className=''/>
-      </a>
-      <a href="/" className='transition-all duration-75 hover:outline outline-slate-500 p-3 rounded-2xl cursor-pointer'>
+      </Link>
+      <Link href="/create-post" className='transition-all duration-75 hover:outline outline-slate-500 p-3 rounded-2xl cursor-pointer'>
         <CirclePlus size={36} color='white' className=''/>
-      </a>
+      </Link>
 
       <SignedOut>
         <SignInButton>

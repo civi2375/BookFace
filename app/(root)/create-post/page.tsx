@@ -8,7 +8,7 @@ const page = async() => {
   const userInfo = await fetchUserData(user?.id||"")
   return (
     <div className='main-container'>
-      <PostForm userId={userInfo._id||""} postId='' option='create'/>
+      <PostForm userId={userInfo._id || ""} postId='' option='create' Postcontext={''}/>
     </div>
   )
 }
