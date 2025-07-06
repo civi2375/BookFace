@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+**注意**：此專案仍在開發中，部分功能尚未實作。
 
-## Getting Started
+## 功能
 
-First, run the development server:
+### 已完成功能
+- **使用者相關**：
+  - [x] 使用 Google、Discord 帳號登入。
+  - [x] 每個使用者擁有個人頁面，可透過設定修改資料。
+  - [x] 可搜尋其他使用者。
+- **貼文相關**：
+  - [x] 使用者可以發布貼文。
+  - [x] 貼文可被按讚和留言。
+  - [x] 貼文作者可刪除自己的貼文。
+- **其他**：
+  - [x] 編輯個人資料頁面。
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 未來可能開發功能
+- **使用者相關**：
+  - [ ] 推薦熱門使用者。
+  - [ ] 使用者可上傳頭像。
+  - [ ] 新增好友功能。
+  - [ ] 即時通知功能。
+- **貼文相關**：
+  - [ ] 撰寫貼文時可選擇心情（開心、難過等）。
+  - [ ] 推薦熱門貼文。
+  - [ ] 貼文可上傳圖片或影片。
+    
+- **訊息相關**：
+  - [ ] 使用者間一對一訊息傳送。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 使用的技術
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **前端**：
+  - [Next.js](https://nextjs.org/) – 伺服器端渲染與靜態網站生成。
+  - [ShadCN](https://shadcn.dev/) – 現代化 UI 組件庫。
+  - [Tailwind CSS](https://tailwindcss.com/) – 用於樣式設計。
+- **後端**：
+  - [MongoDB](https://www.mongodb.com/) – NoSQL 資料庫。
+- **認證**：
+  - [Clerk](https://clerk.dev/) – 認證與使用者管理。
