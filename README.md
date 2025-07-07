@@ -41,3 +41,6 @@
   - [MongoDB](https://www.mongodb.com/) – NoSQL 資料庫。
 - **認證**：
   - [Clerk](https://clerk.dev/) – 認證與使用者管理。
+ 
+## 使用流程
+- ** 使用時要先登入並完成初次的個人設定才能做後續的操作 **
