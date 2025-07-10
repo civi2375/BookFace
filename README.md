@@ -4,6 +4,16 @@
 ### 介紹
 - **這是我的一個個人專案，主要是以模仿FaceBook、Thread等社群平台的功能為主，來練習Next.js、Clerk、TailwindCSS等技術**
 
+### 範例
+- **按讚並留言**:
+  - ![image](https://github.com/civi2375/BookFace/blob/main/public/assets/readMd/readmd1.gif?raw=true)
+  
+- **觀看特定文章留言**:
+  - ![image](https://github.com/civi2375/BookFace/blob/main/public/assets/readMd/readmd2.gif?raw=true)
+  
+- **搜尋使用者**:
+  - ![image](https://github.com/civi2375/BookFace/blob/main/public/assets/readMd/readmd3.gif?raw=true)
+
 ## 功能
 
 ### 已完成功能
