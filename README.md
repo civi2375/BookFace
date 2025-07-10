@@ -4,13 +4,13 @@
 
 ### 範例
 - **按讚並留言**:
-  - ![image](https://github.com/civi2375/BookFace/blob/main/public/assets/readMd/readmd1.gif?raw=true)
+  ![image](https://github.com/civi2375/BookFace/blob/main/public/assets/readMd/readmd1.gif?raw=true)
   
 - **觀看特定文章留言**:
-  - ![image](https://github.com/civi2375/BookFace/blob/main/public/assets/readMd/readmd2.gif?raw=true)
+  ![image](https://github.com/civi2375/BookFace/blob/main/public/assets/readMd/readmd2.gif?raw=true)
   
 - **搜尋使用者**:
-  - ![image](https://github.com/civi2375/BookFace/blob/main/public/assets/readMd/readmd3.gif?raw=true)
+  ![image](https://github.com/civi2375/BookFace/blob/main/public/assets/readMd/readmd3.gif?raw=true)
 
 ## 功能
 
