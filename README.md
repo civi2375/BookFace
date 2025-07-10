@@ -1,5 +1,9 @@
 **注意**：此專案仍在開發中，部分功能尚未實作。
 
+![image](https://github.com/civi2375/BookFace/blob/main/public/assets/home.png?raw=true)
+### 介紹
+- **這是我的一個個人專案，主要是以模仿FaceBook、Thread等社群平台的功能為主，來練習Next.js、Clerk、TailwindCSS等技術**
+
 ## 功能
 
 ### 已完成功能
@@ -38,3 +42,7 @@
   - [MongoDB](https://www.mongodb.com/) – NoSQL 資料庫。
 - **認證**：
   - [Clerk](https://clerk.dev/) – 認證與使用者管理。
+ 
+## 使用流程
+- ** 使用時要先登入並完成初次的個人設定才能做後續的操作 **
+- ** 請記得先在.env檔案中設定好您的相關API Key
