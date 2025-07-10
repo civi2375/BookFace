@@ -1,6 +1,4 @@
 **注意**：此專案仍在開發中，部分功能尚未實作。
-
-![image](https://github.com/civi2375/BookFace/blob/main/public/assets/home.png?raw=true)
 ### 介紹
 - **這是我的一個個人專案，主要是以模仿FaceBook、Thread等社群平台的功能為主，來練習Next.js、Clerk、TailwindCSS等技術**
 
